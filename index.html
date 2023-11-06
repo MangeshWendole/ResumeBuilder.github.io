@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            background: lightblue;
+        }
+        #lab {
+            padding: 10px;
+        }
+        table {
+            margin-top: 50px;
+            text-align: center;
+            background: #4794b3;
+            color: #fff;
+        }
+        #show th,
+        #show td {
+            padding: 13px;
+        }
+        #btna td input {
+            width: 100%;    
+        }
+        #jstext {
+    text-align: center;
+    font-size: 90px;
+  }
+    </style>
+</head>
+<body>   
+    <div class="container">
+        <div class="personal_info">
+            <p id = "par"> <h3>Personal Information</h3></p>
+            <div id="lab">
+                <lable>First name </lable>
+                <input type="text" id="Firstname" value="Enter first name " size="39%">
+                <lable>Middle name </lable>
+                <input type="text" id="Middlename" value="Enter Middle name " size="39%">
+                <lable>Last name </lable>
+                <input type="text" id="Lastname" value="Enter Last name " size="39%">
+            </div>
+            <div id="lab">
+                <lable>landmark </lable>
+                <input type="text" id="Landmark" value="Enter landmark" size="80%">
+                <lable>city </lable>
+                <input type="text" id="City" value="Enter City name " size="30%">
+            </div>
+            <div id="lab">
+                <lable>state </lable>
+                <input type="text" id="State" value="Enter state " size="49%">
+                <lable>Zip code </lable>
+                <input type="text" id="Zip" value="Enter Zipcode " size="49%">
+            </div>
+            <div id="lab">
+                <lable>Email </lable>
+                <input type="text" id="Email_ID" value="Enter Email " size="49%">
+                <lable>Mobile Number </lable>
+                <input type="text" id="Mobile_Number" value="Enter Mobile Number " size="49%">
+            </div>
+            <br>
+            <div class="Career_objective">
+                <p id = "par"> <h3>Career Objective</h3></p>
+                <div id="lab">
+                    <form>
+                        <textarea id="objective" rows="6" cols="179" ></textarea>
+                    </form>
+                </div>
+            </div>
+            <div class="Professional_skills">
+                <p id = "par"> <h3>Professional Skills</h3></p>
+                <div id="lab">
+                    <form>
+                        <textarea id= "Skill" rows="6" cols="179"></textarea>
+                    </form>
+                </div>
+            </div>
+            <br><br>
+
+            <div class="Education">
+                <p id = "par"> <h3>Educational Qualification</h3></p>                
+                <table id="tab_info">
+                    <tr>
+                        <th>course</th>
+                        <th>University/Board</th>
+                        <th>School/College</th>
+                        <th>Year of passing</th>
+                        <th>Percentage/grade</th>
+                    </tr>
+                     <tr>
+                        <td><input type="text" name = "course" id = "course"></td>
+                        <td><input type="text" name = "brd" id = "brd"></td>
+                        <td><input type="text" name = "college" id = "college"></td>
+                        <td><input type="text" name = "YOP" id = "YOP"></td>
+                        <td><input type="text" name = "Grade" id = "Grade"></td>
+                    </tr> 
+                </table>
+                
+            </div>    
+                <br><br>
+              
+              <div class="Other_skills">
+                <p id = "par"> <h3>Other Skills</h3></p>                                
+                <div id="lab">
+                    <form>
+                        <textarea id="Other_skill" rows="6" cols="179" ></textarea>
+                    </form>
+                </div>
+            </div>
+            <br><br>
+            <div class="Experience">
+                <p id = "par"> <h3>Work Experience</h3></p>                                
+                <div id="lab">
+                    <lable>Organization</lable>
+                    <input type="text" id="orgname" value="Enter name of Organization" size="39%">
+                    <lable>Description</lable>
+                    <input type="text" id="Jobdisc" value="Discription" size="39%">
+                    <lable>Job Role</lable>
+                    <input type="text" id="Jobrole" value="Enter Job Role" size="39%"> 
+                </div> 
+            </div>
+            <br><br>
+            <div class="soft_skills">
+                <p id = "par"> <h3>Soft Skills</h3></p>                                                
+                <div id="lab">
+                    <form>
+                        <textarea id="Soft_skill" rows="6" cols="179" ></textarea>
+                    </form>
+                </div>
+            </div>
+            <br><br>
+            <div class="personalinformation">
+            <p id="par"><h3>Personal Information</h3><p>                                                                
+                <div id="lab">
+                    <lable>Date of Birth </lable>
+                    <input type="text" id="Date_of_birth" size="39%">
+                    <lable>Gender</lable>
+                    <input type="text" id="Gender" size="39%">
+                    <br><br>
+                    <lable>Marital Status</lable>
+                    <input type="text" id="Marital_status" size="39%">
+                    <lable>Languages Known</lable>
+                    <input type="text" id="Languages_known" size="39%">
+                    <br><br>
+                    <lable>Hobbies</lable>
+                    <input type="text" id="Hobbies" size="39%">
+                    <lable>Permanent Address</lable>
+                    <input type="text" id="Permanent_Address" size="39%">
+                </div>
+            </div>
+            <div class="declaration">
+                <p id = "par"><h3>Declaration : </h3><p>                                                                                    
+                <div id="lab">
+                    <input type="checkbox" id="declaration">
+                        I hereby declare that the infomation provided is true to the best of my Knowledge.
+                        <br><br>
+                </div>
+            </div>
+        </div>
+
+        </div>
+            <br><button id="button">print</button>  
+        </div>
+ <script src="index.js"></script> 
+        
+</body>
+</html>
